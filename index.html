@@ -3,16 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Discover the portfolio of Mohab Elkholy - a skilled developer and designer specializing in web development, UI/UX design, and responsive web apps."
+      content="Explore the portfolio of Mohab Elkholy, a skilled front-end developer and UI/UX designer specializing in web development, responsive design, and modern web applications."
     />
     <meta
       name="keywords"
-      content="Mohab Elkholy, Portfolio, Web Developer, UI/UX Designer, Responsive Design, Web Apps, Frontend Development, MohabElkholy, mohabelkholy, mohab elkholy, مهاب الخولي"
+      content="Mohab Elkholy, Web Developer, UI/UX Designer, Frontend Developer, React Developer, Portfolio Website, Responsive Web Design, JavaScript, Tailwind CSS, Figma, Photoshop, Web Apps, مهاب الخولي, تصميم مواقع, تطوير واجهات المستخدم"
     />
     <meta name="author" content="Mohab Elkholy" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://7mohabelkholy.github.io//" />
+
+    <!-- Open Graph (OG) for Social Media -->
+    <meta property="og:title" content="Mohab Elkholy - Developer & Designer" />
+    <meta
+      property="og:description"
+      content="Discover the portfolio of Mohab Elkholy, a front-end developer and UI/UX designer specializing in modern web applications."
+    />
+    <meta
+      property="og:image"
+      content="https://7mohabelkholy.github.io/og-image.jpg"
+    />
+    <meta property="og:url" content="https://7mohabelkholy.github.io/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohab Elkholy - Developer & Designer" />
+    <meta
+      name="twitter:description"
+      content="Explore the portfolio of Mohab Elkholy, a front-end developer and UI/UX designer specializing in modern web applications."
+    />
+    <meta name="twitter:image" content="https://7mohabelkholy.github.io/" />
 
     <title>Mohab Elkholy - Developer & Designer</title>
 
@@ -20,13 +45,21 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Preloading Fonts -->
+    <!-- Preload & Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -34,360 +67,158 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="test"></div>
-    <main>
-      <section class="hero">
-        <div class="hero-headers">
-          <h1>Welcome to My World of Design and <u>Code</u></h1>
-          <h2>
-            Crafting seamless digital experiences through design and
-            development.
-          </h2>
-        </div>
+    <header>
+      <div class="header-text-div">
+        <h2 class="header-text">
+          <span class="header-text-strong">Design</span> Smart.
+        </h2>
+        <h2 class="header-text">
+          <span class="header-text-strong">Code</span> Sharp.
+        </h2>
+        <h2 class="header-text">
+          <span class="header-text-strong">Create</span>
+          <span class="header-text-special">with</span> Impact.
+        </h2>
+      </div>
+      <img
+        class="portarit"
+        src="./imgs/portarit.png"
+        alt="a portarit of me mohab elkholy"
+      />
+      <div class="text-overlay">
+        <h1>Mohab<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elkholy</h1>
+      </div>
+    </header>
+    <section class="skills-section">
+      <img src="./imgs/bg.png" alt="dotted circle" class="bg" />
+      <div class="skills-div">
+        <h2 class="skills-bold">Development</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React & React Native</li>
+          <li>Redux</li>
+          <li>Tailwind CSS</li>
+          <li>Python</li>
+        </ul>
+      </div>
 
-        <a class="CTA" href="#CONTACT">CONTACT ME!</a>
-      </section>
+      <div class="skills-div">
+        <h2 class="skills-bold">Design</h2>
+        <ul>
+          <li>UI/UX Principles</li>
+          <li>Figma</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>Responsive Web Design</li>
+        </ul>
+      </div>
 
-      <section class="about-me">
-        <div class="section-header-counteier">
-          <p class="section-header">About Me</p>
-          <p class="section-tag">
-            A unique journey from technical education to digital design.
-          </p>
-        </div>
+      <div class="skills-div">
+        <h2 class="skills-bold">Tools & Other</h2>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Firebase</li>
+          <li>SQLite</li>
+        </ul>
+      </div>
+    </section>
+    <section class="about-me">
+      <div class="black-box"></div>
 
-        <p class="about-text">
-          Hi, I’m Mohab, a Web Developer and UI/UX Designer with a background in
-          electrical engineering and Management Information Systems. My passion
-          lies in blending technical expertise with creative design to craft
-          functional and visually compelling digital experiences.
-        </p>
-        <p class="about-text">
-          I thrive on learning new technologies, pushing creative boundaries,
-          and building solutions that leave a lasting impression.
-        </p>
-      </section>
+      <h2 class="header-text">
+        <span class="header-text-strong">About</span> me,
+      </h2>
 
-      <section class="projects">
-        <div class="section-header-counteier">
-          <p class="section-header">My Projects</p>
-          <p class="section-tag">
-            Showcasing a blend of creativity and technical skill.
-          </p>
-        </div>
+      <p class="about-text">
+        From UI/UX to front-end development, I craft seamless digital
+        experiences with precision and creativity. Visuals, branding, and
+        interaction—all in perfect balance.
+      </p>
 
-        <div class="cards">
-          <div class="card">
-            <img class="card-img" src="esketsh.webp" alt="esketsh app logo" />
-            <div class="card-text">
-              <p class="card-title">Esketsh</p>
-              <p class="card-dis">React Native, Redux, Firebase</p>
-              <a
-                href="https://7mohabelkholy.github.io/EsketchOfficial/"
-                target="_blank"
-                class="CTA"
-                >View Project</a
-              >
-            </div>
-          </div>
+      <h2 class="about-text-special">I design, I code, I create.</h2>
+    </section>
 
-          <div class="card">
-            <!-- <img class="card-img" src="esketsh.png" alt="esketsh app logo" /> -->
-            <div class="placeholder"></div>
-            <div class="card-text">
-              <p class="card-title">Coming soon</p>
-              <p class="card-dis">Coming soon</p>
-              <a href="#" class="CTA">Coming soon</a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section class="contact-me">
+      <div class="black-box2"></div>
 
-      <section class="skills">
-        <div class="section-header-counteier">
-          <p class="section-header">Skills</p>
-          <p class="section-tag">Tools of my trade and expertise.</p>
-        </div>
+      <h2 class="header-text">
+        <span class="header-text-strong">Contact</span> me,
+      </h2>
 
-        <div class="skills-section">
-          <p class="grid-header">Technologies that i use</p>
+      <div class="social-grid">
+        <a href="mailto:7mohabelkholy@gmail.com">
+          <img class="social-icon" src="./imgs/email.png" alt="email logo" />
+        </a>
 
-          <div class="skills-grid">
-            <div class="skill-item">
-              <i class="fa-brands fa-html5 icon"></i>
-              <div class="skill-column">
-                <p class="skill-header">HTML</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-brands fa-css3-alt icon"></i>
-              <div class="skill-column">
-                <p class="skill-header">CSS</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-css"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-brands fa-square-js icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">JavaScript</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-js"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-brands fa-react icon"></i>
-              <div class="skill-column">
-                <p class="skill-header">React</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-react"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-brands fa-react icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">React Native</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-reactn"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-brands fa-python icon"></i>
-              <div class="skill-column">
-                <p class="skill-header">Python</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-reactn"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-solid fa-server icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">Firebase</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-firebase"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-solid fa-arrows-spin icon"></i>
-              <div class="skill-column">
-                <p class="skill-header">Redux</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-firebase"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills-section">
-          <p class="grid-header">Skills to show my ideas</p>
-
-          <div class="skills-grid">
-            <div class="skill-item">
-              <i class="fa-solid fa-vector-square icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">Wireframing</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-solid fa-object-group icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">Responsive Design</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-react"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-brands fa-figma icon"></i>
-              <div class="skill-column">
-                <p class="skill-header">Figma</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-regular fa-image icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">Adobe Photoshop</p>
-
-                <div class="prograss-bar">
-                  <div class="prograss prograss-react"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills-section">
-          <p class="grid-header">Soft skills</p>
-
-          <div class="skills-grid">
-            <div class="skill-item">
-              <i class="fa-solid fa-brain icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">Problem-solving</p>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-solid fa-code-branch icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">
-                  Analytical thinking
-                </p>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-solid fa-rainbow icon"></i>
-              <div class="skill-column">
-                <p class="skill-header">Creativity</p>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fa-solid fa-hourglass-start icon"></i>
-              <div class="skill-column">
-                <p class="skill-header skill-header-large">Time management</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="certficate">
-        <div class="section-header-counteier">
-          <p class="section-header">My Certificates</p>
-          <p class="section-tag">Showcasing the certificates of my skills.</p>
-        </div>
-        <div class="certficate-grid">
-          <img class="certfactie-img" src="certfactie/web.webp" alt="web" />
-          <img class="certfactie-img" src="certfactie/excel 1.webp" alt="web" />
-          <img class="certfactie-img" src="certfactie/excel2.webp" alt="web" />
+        <a href="https://www.instagram.com/mohab___elkholy" target="_blank">
           <img
-            class="certfactie-img"
-            src="certfactie/effictive communication.webp"
-            alt="web"
+            class="social-icon"
+            src="./imgs/instagram.png"
+            alt="instagram logo"
           />
-          <img class="certfactie-img" src="certfactie/seo.webp" alt="web" />
-          <img class="certfactie-img" src="certfactie/ui.webp" alt="web" />
-          <img class="certfactie-img" src="certfactie/word.webp" alt="web" />
-          <img class="certfactie-img" src="certfactie/mohab.webp" alt="web" />
-        </div>
-        <!-- Lightbox for full-size image -->
-        <div id="lightbox" class="lightbox">
-          <span class="close">&times;</span>
-          <img class="lightbox-content" id="lightbox-img" />
-        </div>
-      </section>
+        </a>
 
-      <section id="CONTACT" class="contact">
-        <div class="section-header-counteier">
-          <p class="section-header">Contact Me</p>
-          <p class="section-tag">Let’s connect and bring ideas to life!</p>
-        </div>
+        <a href="https://www.pinterest.com/21mohabelkholy" target="_blank">
+          <img
+            class="social-icon"
+            src="./imgs/pinterest.png"
+            alt="pinterest logo"
+          />
+        </a>
 
-        <p class="section-tag">
-          Have a project in mind? Want to collaborate or just say hi? I'd love
-          to hear from you!
-        </p>
+        <a href="https://wa.me/+201551152503" target="_blank">
+          <img
+            class="social-icon"
+            src="./imgs/whatsapp.png"
+            alt="whatsapp logo"
+          />
+        </a>
+      </div>
+      <h2 class="about-text-special">More than happy to hear from you!</h2>
+    </section>
 
-        <div class="contact-grid">
-          <!-- Email -->
-          <div class="skill-item">
-            <i class="fa-solid fa-envelope icon"></i>
-            <div class="skill-column">
-              <a
-                href="mailto:7mohabelkholy@gmail.com"
-                class="email skill-header"
-              >
-                7mohabelkholy@gmail.com
-              </a>
-            </div>
-          </div>
-
-          <!-- WhatsApp -->
-          <div class="skill-item">
-            <i class="fa-brands fa-square-whatsapp icon"></i>
-            <div class="skill-column">
-              <a
-                href="https://wa.me/201551152503"
-                target="_blank"
-                class="skill-header"
-              >
-                01551152503
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script
-      src="https://kit.fontawesome.com/4f7037161c.js"
-      crossorigin="anonymous"
-    ></script>
     <script>
-      // Select elements
-      const lightbox = document.getElementById("lightbox");
-      const lightboxImg = document.getElementById("lightbox-img");
-      const images = document.querySelectorAll(".certfactie-img");
-      const closeBtn = document.querySelector(".close");
+      // Debounce variable to detect scroll end
+      let isScrolling;
 
-      // Add click event to each certificate image
-      images.forEach((img) => {
-        img.addEventListener("click", () => {
-          lightbox.style.display = "flex"; // Show the lightbox
-          lightboxImg.src = img.src; // Set the clicked image as the lightbox content
+      // Listen to the scroll event
+      window.addEventListener("scroll", function () {
+        // Clear our timeout throughout the scroll
+        window.clearTimeout(isScrolling);
+
+        // Set a timeout to run after scrolling ends
+        isScrolling = setTimeout(function () {
+          snapToSection();
+        }, 100); // 100ms debounce delay; adjust as needed
+      });
+
+      function snapToSection() {
+        // Get all sections that should snap into view
+        const sections = document.querySelectorAll(
+          "header, .skills-section, .about-me, .contact-me"
+        );
+        const scrollPosition = window.scrollY;
+        const viewportHeight = window.innerHeight;
+        let closestSection = null;
+        let smallestDistance = Infinity;
+
+        sections.forEach((section) => {
+          // Calculate distance from top of viewport to the section's top
+          const sectionTop = section.offsetTop;
+          const distance = Math.abs(sectionTop - scrollPosition);
+          if (distance < smallestDistance) {
+            smallestDistance = distance;
+            closestSection = section;
+          }
         });
-      });
 
-      // Add click event to close button
-      closeBtn.addEventListener("click", () => {
-        lightbox.style.display = "none"; // Hide the lightbox
-      });
-
-      // Close lightbox when clicking outside the image
-      lightbox.addEventListener("click", (e) => {
-        if (e.target === lightbox) {
-          lightbox.style.display = "none";
+        // Scroll to the closest section smoothly
+        if (closestSection) {
+          closestSection.scrollIntoView({ behavior: "smooth" });
         }
-      });
+      }
     </script>
   </body>
 </html>
