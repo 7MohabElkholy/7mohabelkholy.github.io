@@ -698,6 +698,160 @@ textarea.form-input {
   justify-content: center;
 }
 
+/* Showcase Page Styles */
+.showcase-main {
+  padding-top: 120px; /* To offset fixed navbar */
+}
+
+.showcase-divider {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--primary),
+    transparent
+  );
+  margin: 80px 0;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  z-index: 10;
+  transition: var(--transition);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-btn:hover {
+  background-color: var(--primary);
+}
+
+.carousel-btn.prev {
+  left: 15px;
+}
+
+.carousel-btn.next {
+  right: 15px;
+}
+
+/* Photo Grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.photo-grid-item {
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.photo-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.photo-grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.photo-grid-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Image Modal (Lightbox) Styles */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 0.4s;
+}
+
+.image-modal-content {
+  margin: auto;
+  display: block;
+  max-width: 85%;
+  max-height: 80vh;
+  animation: zoomIn 0.4s;
+}
+
+.modal-caption {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
 /* Footer */
 footer {
   background-color: var(--dark);
@@ -745,6 +899,42 @@ footer {
 .copyright {
   color: var(--gray);
   font-size: 0.9rem;
+}
+
+/* RTL Overrides */
+[dir="rtl"] .nav-links a::after {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .section-title::after {
+  right: 50%;
+  transform: translateX(50%);
+  left: auto;
+}
+
+[dir="rtl"] .project-link i {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .case-study-section li {
+  padding-right: 25px;
+  padding-left: 0;
+}
+
+[dir="rtl"] .case-study-section li:before {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .carousel-btn.prev {
+  right: 15px;
+  left: auto;
+}
+
+[dir="rtl"] .carousel-btn.next {
+  left: 15px;
+  right: auto;
 }
 
 /* Mobile Menu Overlay */
@@ -838,6 +1028,15 @@ footer {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
