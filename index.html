@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta name="p:domain_verify" content="b296a7d4ea199bfc1d724e6502fd68cd" />
@@ -128,6 +128,7 @@
               <span class="skill-item">React & React Native</span>
               <span class="skill-item">Next.js</span>
               <span class="skill-item">Redux</span>
+              <span class="skill-item">Node.js</span>
               <span class="skill-item">Tailwind CSS</span>
               <span class="skill-item">Python</span>
             </div>
@@ -147,9 +148,12 @@
             <h3>Tools & Other</h3>
             <div class="skill-list">
               <span class="skill-item">Git & GitHub</span>
+              <span class="skill-item">IIS</span>
               <span class="skill-item">Firebase</span>
               <span class="skill-item">Supabase</span>
               <span class="skill-item">SQLite</span>
+              <span class="skill-item">SQL Server</span>
+              <span class="skill-item">PostgreSQL</span>
             </div>
           </div>
         </div>
@@ -187,6 +191,30 @@
       <div class="container">
         <h2 class="section-title">My Projects</h2>
         <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./imgs/project 4 thumbnail.jpg" alt="Project 4" />
+            </div>
+            <div class="project-info">
+              <h3>Almukhtar Educational</h3>
+              <p>
+                A comprehensive educational platform offering courses,
+                resources, and interactive tools to enhance learning experiences
+                for students.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Tailwind</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">IIS</span>
+              </div>
+              <a href="/almukhtar.html" class="project-link"
+                >check it out <i class="fa-solid fa-arrow-right"> </i>
+              </a>
+            </div>
+          </div>
+
           <div class="project-card">
             <div class="project-image">
               <img src="./imgs/project 1 thumbnail.jpg" alt="Project 1" />
@@ -407,7 +435,7 @@
       // Animation on scroll
       const animateOnScroll = () => {
         const elements = document.querySelectorAll(
-          ".skill-card, .project-card, .section-title, .about-text, .about-image, .contact-text, .contact-form"
+          ".skill-card, .project-card, .section-title, .about-text, .about-image, .contact-text, .contact-form",
         );
 
         elements.forEach((element) => {
