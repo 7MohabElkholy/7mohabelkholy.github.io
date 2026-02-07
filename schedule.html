@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>الجدول الأسبوعي المنضبط</title>
+
+    <style>
+      :root {
+        --college: #2563eb;
+        --college-light: #dbeafe;
+        --work: #059669;
+        --work-light: #dcfce7;
+        --rest: #64748b;
+        --rest-light: #f1f5f9;
+        --danger: #e11d48;
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      body {
+        font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        margin: 0;
+        padding: 16px;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 650px;
+        margin: auto;
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: var(--college) transparent;
+      }
+
+      .tab {
+        border: none;
+        padding: 10px 18px;
+        border-radius: 20px;
+        cursor: pointer;
+        background: white;
+        font-weight: bold;
+        color: #475569;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+        white-space: nowrap;
+        font-family: inherit;
+      }
+
+      .tab:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .tab.active {
+        color: white;
+        background: var(--college);
+        transform: scale(1.05);
+      }
+
+      .tab.work-tab.active {
+        background: var(--work);
+      }
+
+      .tab.rest-tab.active {
+        background: var(--rest);
+      }
+
+      .day {
+        display: none;
+        background: white;
+        padding: 18px;
+        border-radius: 14px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        animation: slideIn 0.4s ease-out;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .day.active {
+        display: block;
+      }
+
+      .item {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 14px;
+        border-right: 3px solid #e2e8f0;
+        padding-right: 12px;
+        transition: var(--transition);
+        animation: itemFade 0.5s ease-out backwards;
+      }
+
+      .item:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .item:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .item:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .item:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .item:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .item:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+      .item:nth-child(7) {
+        animation-delay: 0.7s;
+      }
+      .item:nth-child(8) {
+        animation-delay: 0.8s;
+      }
+
+      @keyframes itemFade {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .item:hover {
+        border-right-color: var(--college);
+        background: linear-gradient(
+          to left,
+          rgba(37, 99, 235, 0.05),
+          transparent
+        );
+        padding-right: 16px;
+        border-radius: 8px;
+      }
+
+      .work-day .item:hover {
+        border-right-color: var(--work);
+        background: linear-gradient(
+          to left,
+          rgba(5, 150, 105, 0.05),
+          transparent
+        );
+      }
+
+      .rest-day .item:hover {
+        border-right-color: var(--rest);
+        background: linear-gradient(
+          to left,
+          rgba(100, 116, 139, 0.05),
+          transparent
+        );
+      }
+
+      .time {
+        min-width: 90px;
+        font-weight: bold;
+        font-size: 0.85rem;
+        color: #475569;
+      }
+
+      .title {
+        font-weight: bold;
+        color: #1e293b;
+      }
+
+      .desc {
+        font-size: 0.85rem;
+        color: #64748b;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 0.7rem;
+        padding: 3px 8px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: var(--transition);
+      }
+
+      .badge:hover {
+        transform: scale(1.05);
+      }
+
+      .college {
+        background: var(--college-light);
+        color: #1e40af;
+      }
+      .work {
+        background: var(--work-light);
+        color: #166534;
+      }
+      .rest {
+        background: var(--rest-light);
+        color: #475569;
+      }
+
+      .footer {
+        margin-top: 16px;
+        background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+        color: var(--danger);
+        padding: 12px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 0.85rem;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.2);
+        }
+        50% {
+          box-shadow: 0 0 0 10px rgba(225, 29, 72, 0);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .tabs {
+          justify-content: flex-start;
+          padding: 10px 0;
+        }
+
+        .tab {
+          padding: 8px 14px;
+          font-size: 0.9rem;
+        }
+
+        .item {
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .time {
+          min-width: auto;
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>جدول الانضباط الأسبوعي</h2>
+
+      <div class="tabs">
+        <button class="tab college-tab" data-day="sun">الأحد</button>
+        <button class="tab college-tab" data-day="mon">الاثنين</button>
+        <button class="tab work-tab" data-day="tue">الثلاثاء</button>
+        <button class="tab college-tab" data-day="wed">الأربعاء</button>
+        <button class="tab work-tab" data-day="thu">الخميس</button>
+        <button class="tab rest-tab" data-day="fri">الجمعة</button>
+        <button class="tab rest-tab" data-day="sat">السبت</button>
+      </div>
+
+      <!-- ====== COLLEGE DAY TEMPLATE ====== -->
+      <div id="sun" class="day">
+        <span class="badge college">يوم كلية</span>
+
+        <div class="item">
+          <div class="time">6–9 ص</div>
+          <div>
+            <div class="title">محاضرات صباحية</div>
+            <div class="desc">تركيز كامل + ملاحظات مختصرة فقط.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">9–12 ظ</div>
+          <div>
+            <div class="title">محاضرات</div>
+            <div class="desc">لا مراجعة، فقط فهم.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">12–1 ظ</div>
+          <div>
+            <div class="title">استراحة</div>
+            <div class="desc">طعام + فصل ذهني.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">1–6 م</div>
+          <div>
+            <div class="title">استكمال اليوم الجامعي</div>
+            <div class="desc">انتباه + تسجيل نقاط غامضة.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">6–7 م</div>
+          <div>
+            <div class="title">استشفاء</div>
+            <div class="desc">راحة تامة بلا شاشات.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">7–8 م</div>
+          <div>
+            <div class="title">مذاكرة وتلخيص</div>
+            <div class="desc">تلخيص + تثبيت الفهم.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">8–9 م</div>
+          <div>
+            <div class="title">إدارة خفيفة</div>
+            <div class="desc">رسائل، تخطيط الغد.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">11:30 م</div>
+          <div><div class="title">نوم إجباري</div></div>
+        </div>
+      </div>
+
+      <div id="mon" class="day"></div>
+      <div id="wed" class="day"></div>
+
+      <!-- ====== WORK DAYS ====== -->
+      <div id="tue" class="day">
+        <span class="badge work">عمل عميق – Client A</span>
+
+        <div class="item">
+          <div class="time">8–9 ص</div>
+          <div>
+            <div class="title">تحضير</div>
+            <div class="desc">مراجعة المهام فقط.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">9–12 ظ</div>
+          <div>
+            <div class="title">Deep Work</div>
+            <div class="desc">تنفيذ المهام الأساسية.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">12–1 ظ</div>
+          <div><div class="title">استراحة</div></div>
+        </div>
+        <div class="item">
+          <div class="time">1–3 م</div>
+          <div>
+            <div class="title">استكمال</div>
+            <div class="desc">إصلاح أخطاء + تحسين.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">3–4 م</div>
+          <div><div class="title">توثيق</div></div>
+        </div>
+        <div class="item">
+          <div class="time">بعد 4 م</div>
+          <div><div class="title">توقف تام</div></div>
+        </div>
+      </div>
+
+      <div id="thu" class="day work-day">
+        <span class="badge work">عمل عميق – Client B</span>
+
+        <div class="item">
+          <div class="time">8–9 ص</div>
+          <div>
+            <div class="title">تحضير</div>
+            <div class="desc">مراجعة المهام فقط.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">9–12 ظ</div>
+          <div>
+            <div class="title">Deep Work</div>
+            <div class="desc">تنفيذ المهام الأساسية.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">12–1 ظ</div>
+          <div><div class="title">استراحة</div></div>
+        </div>
+        <div class="item">
+          <div class="time">1–3 م</div>
+          <div>
+            <div class="title">استكمال</div>
+            <div class="desc">إصلاح أخطاء + تحسين.</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">3–4 م</div>
+          <div><div class="title">توثيق</div></div>
+        </div>
+        <div class="item">
+          <div class="time">بعد 4 م</div>
+          <div><div class="title">توقف تام</div></div>
+        </div>
+      </div>
+
+      <div id="fri" class="day">
+        <span class="badge rest">يوم حماية GPA</span>
+        <div class="item">
+          <div class="time">9–11 ص</div>
+          <div><div class="title">مهام طارئة</div></div>
+        </div>
+        <div class="item">
+          <div class="time">11–1 ظ</div>
+          <div><div class="title">مراجعة جامعية</div></div>
+        </div>
+      </div>
+
+      <div id="sat" class="day">
+        <span class="badge rest">يوم مرن</span>
+        <div class="item">
+          <div class="time">صباحًا</div>
+          <div><div class="title">راحة أو عمل خفيف</div></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        قاعدة صارمة: إذا كُسرت ساعة المذاكرة بعد الكلية → المعدل التراكمي في
+        خطر.
+      </div>
+    </div>
+
+    <script>
+      const daysMap = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+      const today = daysMap[new Date().getDay()];
+
+      // Add work-day class to work days
+      document.querySelectorAll("#tue, #thu").forEach((d) => {
+        d.classList.add("work-day");
+      });
+      document.querySelectorAll("#fri, #sat").forEach((d) => {
+        d.classList.add("rest-day");
+      });
+
+      document.querySelectorAll(".day").forEach((d) => {
+        if (d.id === "mon" || d.id === "wed")
+          d.innerHTML = document.getElementById("sun").innerHTML;
+      });
+
+      document.querySelectorAll(".tab").forEach((btn) => {
+        if (btn.dataset.day === today) btn.classList.add("active");
+      });
+
+      document.getElementById(today).classList.add("active");
+
+      document.querySelectorAll(".tab").forEach((btn) => {
+        btn.onclick = () => {
+          document
+            .querySelectorAll(".tab,.day")
+            .forEach((e) => e.classList.remove("active"));
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.day).classList.add("active");
+        };
+      });
+    </script>
+  </body>
+</html>
