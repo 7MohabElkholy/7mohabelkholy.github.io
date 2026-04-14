@@ -6,7 +6,7 @@
 
     The IIS Challenge: The reality of deploying and scaling Next.js applications on a Windows VPS. [DONE]
 
-    Dynamic Asset Management: Building custom public storage engines for tenant-specific logos and banners.
+    Dynamic Asset Management: Building custom public storage engines for tenant-specific logos and banners. [DONE]
 
     Speed vs. Config: Why choosing JavaScript over TypeScript can accelerate full-stack delivery by eliminating configuration fatigue.
 
