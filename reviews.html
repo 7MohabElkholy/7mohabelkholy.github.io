@@ -57,44 +57,38 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script>(function(){var t=localStorage.getItem('theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark-theme')}})()</script>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="nav-container">
-      <a href="index.html" class="logo"
-        ><img src="./imgs/logo.svg" alt="Logo" class="logo-img"
-      /></a>
+    <nav class="floating-nav">
+      <a href="index.html" class="logo"><img src="./imgs/logo.svg" alt="Mohab Elkholy" class="logo-img" /></a>
       <div class="nav-links">
         <a href="index.html#home">Home</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="reviews.html" class="active">Reviews</a>
+        <a href="index.html#skills">Expertise</a>
+        <a href="index.html#projects">Work</a>
         <a href="index.html#contact">Contact</a>
       </div>
-      <!-- Mobile Menu Overlay -->
-      <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-        <button class="close-btn" id="closeMenuBtn">
-          <i class="fas fa-times"></i>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
         </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <button class="close-btn" id="closeMenuBtn" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="mobile-links">
         <a href="index.html#home" class="mobile-nav-link">Home</a>
-        <a href="index.html#skills" class="mobile-nav-link">Skills</a>
-        <a href="index.html#about" class="mobile-nav-link">About</a>
-        <a href="index.html#projects" class="mobile-nav-link">Projects</a>
+        <a href="index.html#skills" class="mobile-nav-link">Expertise</a>
+        <a href="index.html#projects" class="mobile-nav-link">Work</a>
         <a href="reviews.html" class="mobile-nav-link">Reviews</a>
         <a href="index.html#contact" class="mobile-nav-link">Contact</a>
       </div>
-      <button class="theme-toggle" id="themeToggle">
-        <i class="fas fa-moon"></i>
-      </button>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
+    </div>
 
     <!-- Reviews Section -->
     <section class="testimonials-page">
@@ -125,54 +119,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img src="./imgs/logo.svg" alt="Logo" class="logo-img" />
-          </div>
-          <div class="footer-links">
-            <a href="index.html#home">Home</a>
-            <a href="index.html#skills">Skills</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="index.html#contact">Contact</a>
-          </div>
-          <div class="footer-social">
-            <a
-              href="https://www.linkedin.com/in/mohab-elkholy/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/7mohabelkholy"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://twitter.com/7mohabelkholy"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/7mohabelkholy/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-          <p class="footer-copyright">
-            &copy; 2024 Mohab Elkholy. All rights reserved.
-          </p>
-        </div>
+    <footer>
+      <div class="container footer-flex">
+        <div class="logo"><img src="./imgs/logo.svg" alt="Mohab Elkholy" class="logo-img" /></div>
+        <p>&copy; 2026 Mohab Elkholy. All rights reserved.</p>
       </div>
     </footer>
 
