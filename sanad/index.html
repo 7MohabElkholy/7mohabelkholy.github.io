@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="سند — برنامج إدارة المراكز التعليمية. حل متكامل لإدارة الطلاب والمعلمين والمجموعات والمدفوعات."
+    />
+    <title>سند — إدارة المراكز التعليمية</title>
+
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Sanad" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============================================
+         Top Navigation
+         ============================================ -->
+    <nav class="top-nav">
+      <div class="container">
+        <a href="/sanad/index.html" class="top-nav-logo">
+          <img src="assets/logo/logo.png" alt="سند" />
+        </a>
+        <div class="top-nav-menu">
+          <a href="/sanad/index.html" class="active">الرئيسية</a>
+          <a href="download.html">التحميل</a>
+          <a href="pricing.html">الأسعار</a>
+          <a href="how-it-works.html">طريقة العمل</a>
+          <a href="help/index.html">المساعدة</a>
+        </div>
+        <div class="top-nav-actions">
+          <a href="download.html" class="btn btn-primary">تحميل سند </a>
+          <button class="nav-toggle" aria-label="فتح القائمة">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav Sheet -->
+    <div class="nav-overlay"></div>
+    <div class="nav-sheet">
+      <button class="nav-sheet-close" aria-label="إغلاق القائمة">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          width="24"
+          height="24"
+        >
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="nav-sheet-menu">
+        <a href="/sanad/index.html">الرئيسية</a>
+        <a href="download.html">التحميل</a>
+        <a href="pricing.html">الأسعار</a>
+        <a href="how-it-works.html">طريقة العمل</a>
+        <a href="help/index.html">المساعدة</a>
+        <a href="contact.html">اتصل بنا</a>
+      </div>
+      <a
+        href="download.html"
+        class="btn btn-primary"
+        style="width: 100%; margin-top: auto"
+        >تحميل سند
+      </a>
+    </div>
+
+    <!-- ============================================
+         Hero
+         ============================================ -->
+    <section class="hero-band hero-band-blue">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="display-mega">أسهل طريقة لإدارة مركزك التعليمي</h1>
+            <p>
+              سند هو الحل المتكامل لإدارة الطلاب والمعلمين والمجموعات والمدفوعات
+              — كل شيء في برنامج واحد يعمل على ويندوز.
+            </p>
+            <div class="hero-ctas">
+              <a href="download.html" class="btn btn-cta">حمّل سند مجاناً</a>
+              <a href="contact.html" class="btn btn-outline">طلب عرض توضيحي</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div
+              style="
+                width: 100%;
+                max-width: 560px;
+                aspect-ratio: 16/10;
+                background: var(--surface-strong);
+                border-radius: var(--rounded-xl);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--muted);
+                font-size: 14px;
+                border: 1px solid var(--hairline);
+              "
+            >
+              لقطة شاشة سند
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Problem → Solution
+         ============================================ -->
+    <section class="section band-canvas">
+      <div class="container">
+        <div class="split-section">
+          <div>
+            <h2 class="display-lg">هل تواجه هذه المشاكل؟</h2>
+            <ul style="margin-top: var(--space-lg)">
+              <li
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--space-sm);
+                  padding-block: var(--space-sm);
+                  border-bottom: 1px solid var(--hairline-soft);
+                  font-size: 18px;
+                  color: var(--ink);
+                "
+              >
+                <span
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--primary);
+                    min-width: 8px;
+                  "
+                ></span>
+                فوضى في تسجيل الحضور والغياب
+              </li>
+              <li
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--space-sm);
+                  padding-block: var(--space-sm);
+                  border-bottom: 1px solid var(--hairline-soft);
+                  font-size: 18px;
+                  color: var(--ink);
+                "
+              >
+                <span
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--primary);
+                    min-width: 8px;
+                  "
+                ></span>
+                متابعة المدفوعات يدوياً
+              </li>
+              <li
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--space-sm);
+                  padding-block: var(--space-sm);
+                  border-bottom: 1px solid var(--hairline-soft);
+                  font-size: 18px;
+                  color: var(--ink);
+                "
+              >
+                <span
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--primary);
+                    min-width: 8px;
+                  "
+                ></span>
+                صعوبة إدارة جداول المعلمين والمجموعات
+              </li>
+              <li
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--space-sm);
+                  padding-block: var(--space-sm);
+                  border-bottom: 1px solid var(--hairline-soft);
+                  font-size: 18px;
+                  color: var(--ink);
+                "
+              >
+                <span
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--primary);
+                    min-width: 8px;
+                  "
+                ></span>
+                تقارير غير دقيقة أو غير متوفرة
+              </li>
+              <li
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--space-sm);
+                  padding-block: var(--space-sm);
+                  border-bottom: 1px solid var(--hairline-soft);
+                  font-size: 18px;
+                  color: var(--ink);
+                "
+              >
+                <span
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--primary);
+                    min-width: 8px;
+                  "
+                ></span>
+                عدم وجود تراخيص مرنة للمراكز
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="display-lg">سند يحلّها كلها</h2>
+            <p
+              class="body-md"
+              style="margin-top: var(--space-lg); color: var(--body)"
+            >
+              سند هو برنامج سطح مكتب متكامل صُمم خصيصاً لإدارة المراكز
+              التعليمية. بواجهة عربية بسيطة وأدوات قوية، يمكنك إدارة الطلاب
+              والمعلمين والمجموعات والجداول والحضور والمدفوعات والتقارير — كل
+              ذلك في برنامج واحد، حتى بدون اتصال بالإنترنت.
+            </p>
+            <a
+              href="how-it-works.html"
+              class="btn btn-text"
+              style="margin-top: var(--space-base)"
+              >تعرف على طريقة العمل ←</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Features Grid
+         ============================================ -->
+    <section class="section band-soft">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-xxl)">
+          <h2 class="display-lg">كل ما تحتاجه في برنامج واحد</h2>
+          <p
+            style="
+              color: var(--body);
+              margin-top: var(--space-base);
+              max-width: 600px;
+              margin-inline: auto;
+            "
+          >
+            ميزات متكاملة مصممة خصيصاً لتلبية احتياجات المراكز التعليمية
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="title-md">إدارة الطلاب</h3>
+            <p>
+              تسجيل الطلاب، متابعة بياناتهم، وسجل حضورهم — كل شيء في مكان واحد.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <path d="M4 20h16" />
+                <path d="M4 4h16v12H4z" />
+                <path d="M8 8h8" />
+                <path d="M8 12h6" />
+              </svg>
+            </div>
+            <h3 class="title-md">إدارة المعلمين</h3>
+            <p>إضافة المعلمين، تحديد جداولهم، وتتبع مهامهم بسهولة.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3 class="title-md">المجموعات</h3>
+            <p>
+              إنشاء مجموعات تعليمية، تقسيم الطلاب حسب المستوى، وإدارة الجدول
+              الزمني.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <h3 class="title-md">الجداول</h3>
+            <p>
+              جدولة الحصص، إدارة أوقات المعلمين، ومشاهدة الجدول الأسبوعي للمركز.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <h3 class="title-md">الحضور</h3>
+            <p>تسجيل حضور وغياب الطلاب بسرعة، مع تقارير يومية وشهرية.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </div>
+            <h3 class="title-md">المدفوعات</h3>
+            <p>إدارة الرسوم، تتبع المدفوعات، وإصدار الفواتير تلقائياً.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                <path d="M21 3v6h-6" />
+              </svg>
+            </div>
+            <h3 class="title-md">التقارير</h3>
+            <p>تقارير شاملة عن الأداء، الحضور، المدفوعات، وإحصائيات المركز.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <h3 class="title-md">التراخيص</h3>
+            <p>
+              نظام تراخيص مرن يناسب حجم مركزك — من المراكز الصغيرة إلى الكبيرة.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="24"
+                height="24"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3 class="title-md">عمل بدون إنترنت</h3>
+            <p>سند يعمل بشكل كامل بدون اتصال بالإنترنت — بياناتك دائماً معك.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Workflow
+         ============================================ -->
+    <section class="section band-canvas">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-xxl)">
+          <h2 class="display-lg">خطوات بسيطة لبدء العمل</h2>
+        </div>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-step-num">١</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">إنشاء حساب المشرف</h3>
+              <p>أنشئ بيانات تسجيل الدخول — البريد الإلكتروني وكلمة المرور — وابدأ العمل فوراً.</p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٢</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">إضافة المعلمين</h3>
+              <p>أضف المعلمين وحدد اختصاصاتهم وجداول عملهم.</p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٣</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">إنشاء المجموعات</h3>
+              <p>قسّم الطلاب إلى مجموعات حسب المستوى أو المادة.</p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٤</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">تسجيل الطلاب</h3>
+              <p>أضف الطلاب إلى المجموعات وسجل بياناتهم كاملة.</p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٥</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">تتبع الحضور</h3>
+              <p>سجل حضور وغياب الطلاب يومياً بضغطة زر.</p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٦</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">إدارة المدفوعات</h3>
+              <p>تابع الرسوم والمدفوعات وأصدر التقارير المالية.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Pricing Preview
+         ============================================ -->
+    <section class="section band-soft">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-xxl)">
+          <h2 class="display-lg">اختر الباقة المناسبة</h2>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="title-lg">المجانية</h3>
+            <div class="pricing-price">0 <span>جنيه/شهر</span></div>
+            <ul class="pricing-features">
+              <li>حتى ٣٠ طالب</li>
+              <li>معلم واحد</li>
+              <li>مجموعتان</li>
+              <li>جميع وظائف سند</li>
+            </ul>
+            <a
+              href="download.html"
+              class="btn btn-secondary"
+              style="width: 100%"
+              >ابدأ مجاناً</a
+            >
+          </div>
+          <div class="pricing-card featured">
+            <span class="pricing-card-badge">الأكثر طلباً</span>
+            <h3 class="title-lg">الأساسية</h3>
+            <div class="pricing-price">٩٩ <span>جنيه/شهر</span></div>
+            <ul class="pricing-features">
+              <li>حتى ١٠٠ طالب</li>
+              <li>حتى ٥ معلمين</li>
+              <li>حتى ١٠ مجموعات</li>
+              <li>جميع وظائف سند</li>
+            </ul>
+            <a href="download.html" class="btn btn-primary" style="width: 100%"
+              >اشترك الآن</a
+            >
+          </div>
+          <div class="pricing-card">
+            <h3 class="title-lg">الاحترافية</h3>
+            <div class="pricing-price">١٩٩ <span>جنيه/شهر</span></div>
+            <ul class="pricing-features">
+              <li>حتى ٣٠٠ طالب</li>
+              <li>حتى ١٥ معلماً</li>
+              <li>حتى ٣٠ مجموعة</li>
+              <li>جميع وظائف سند</li>
+            </ul>
+            <a
+              href="download.html"
+              class="btn btn-secondary"
+              style="width: 100%"
+              >اشترك الآن</a
+            >
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-lg)">
+          <a href="pricing.html" class="btn btn-text">عرض المقارنة الكاملة ←</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FAQ Preview
+         ============================================ -->
+    <section class="section band-canvas">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-xxl)">
+          <h2 class="display-lg">إجابات لأسئلتكم</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              هل يعمل سند بدون اتصال بالإنترنت؟
+            </button>
+            <div class="faq-answer">
+              <p>
+                نعم، سند يعمل بشكل كامل بدون اتصال بالإنترنت. جميع بياناتك مخزنة
+                محلياً على جهازك. يمكنك العمل في أي وقت وأي مكان دون الحاجة
+                للاتصال.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">هل يمكنني ترقية باقتي لاحقاً؟</button>
+            <div class="faq-answer">
+              <p>
+                بالتأكيد. يمكنك الترقية من أي باقة إلى باقة أعلى في أي وقت. سيتم
+                احتساب الفرق пропорциональاً على الأيام المتبقية.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">كيف يتم دفع الاشتراك الشهري؟</button>
+            <div class="faq-answer">
+              <p>
+                يمكنك الدفع عبر التحويل البنكي أو بطاقة الائتمان. تتم المعاملات
+                بشكل آمن ومشفر. سيتم إصدار فاتورة إلكترونية لكل دفعة.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              هل يمكن نقل البيانات من برنامج آخر؟
+            </button>
+            <div class="faq-answer">
+              <p>
+                نعم، نوفر خدمة ترحيل البيانات من معظم البرامج الأخرى. الباقة
+                الاحترافية تتضمن ترحيلاً مجانياً لبياناتك.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">كيف أحصل على الدعم الفني؟</button>
+            <div class="faq-answer">
+              <p>
+                الدعم الفني متاح عبر البريد الإلكتروني لجميع الباقات، وعبر
+                الواتساب للباقات المدفوعة. الباقة الاحترافية تحظى بدعم فني متميز
+                على مدار الساعة.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-lg)">
+          <a href="help/index.html" class="btn btn-text">عرض جميع الأسئلة ←</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA Footer
+         ============================================ -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="display-md">ابدأ الآن مع سند</h2>
+        <p>حمّل سند مجاناً وابدأ في إدارة مركزك التعليمي بكل سهولة</p>
+        <div class="hero-ctas">
+          <a href="download.html" class="btn btn-cta">حمّل سند مجاناً</a>
+          <a href="contact.html" class="btn btn-outline">اطلب عرضاً توضيحياً</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Footer
+         ============================================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>المنتج</h4>
+            <a href="download.html">التحميل</a>
+            <a href="pricing.html">الأسعار</a>
+            <a href="how-it-works.html">طريقة العمل</a>
+            <a href="changelog.html">سجل التحديثات</a>
+          </div>
+          <div class="footer-col">
+            <h4>الدعم</h4>
+            <a href="help/index.html">المساعدة</a>
+            <a href="academy/index.html">الأكاديمية</a>
+            <a href="contact.html">اتصل بنا</a>
+            <a href="status.html">حالة الخدمة</a>
+          </div>
+          <div class="footer-col">
+            <h4>المميزات</h4>
+            <a href="how-it-works.html#students">إدارة الطلاب</a>
+            <a href="how-it-works.html#teachers">إدارة المعلمين</a>
+            <a href="how-it-works.html#attendance">تسجيل الحضور</a>
+            <a href="how-it-works.html#payments">المدفوعات</a>
+          </div>
+          <div class="footer-col">
+            <h4>القانون</h4>
+            <a href="privacy.html">سياسة الخصوصية</a>
+            <a href="terms.html">شروط الاستخدام</a>
+            <a href="refund-policy.html">سياسة الاسترجاع</a>
+          </div>
+          <div class="footer-col">
+            <h4>الشركة</h4>
+            <a href="about.html">عن سند </a>
+            <a href="contact.html">اتصل بنا</a>
+          </div>
+          <div class="footer-col">
+            <img src="assets/logo/logo.png" alt="سند" class="footer-logo" />
+            <p style="font-size: 14px; color: var(--muted)">
+              برنامج إدارة المراكز التعليمية. حل متكامل ومبسط لإدارة مركزك بكل
+              احترافية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="legal-band">
+      <span>© 2026 سند . جميع الحقوق محفوظة.</span>
+      <div>
+        <a href="privacy.html">سياسة الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+        <a href="refund-policy.html">سياسة الاسترجاع</a>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

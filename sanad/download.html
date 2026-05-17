@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="حمّل سند — برنامج إدارة المراكز التعليمية. متوفر لويندوز، مجاني تماماً."
+    />
+    <title>تحميل سند — إدارة المراكز التعليمية</title>
+
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Sanad" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============================================
+         Top Navigation
+         ============================================ -->
+    <nav class="top-nav">
+      <div class="container">
+        <a href="/sanad/index.html" class="top-nav-logo">
+          <img src="assets/logo/logo.png" alt="سند" />
+        </a>
+        <div class="top-nav-menu">
+          <a href="/sanad/index.html">الرئيسية</a>
+          <a href="download.html" class="active">التحميل</a>
+          <a href="pricing.html">الأسعار</a>
+          <a href="how-it-works.html">طريقة العمل</a>
+          <a href="help/index.html">المساعدة</a>
+        </div>
+        <div class="top-nav-actions">
+          <a href="download.html" class="btn btn-primary">تحميل سند </a>
+          <button class="nav-toggle" aria-label="فتح القائمة">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav Sheet -->
+    <div class="nav-overlay"></div>
+    <div class="nav-sheet">
+      <button class="nav-sheet-close" aria-label="إغلاق القائمة">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          width="24"
+          height="24"
+        >
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="nav-sheet-menu">
+        <a href="/sanad/index.html">الرئيسية</a>
+        <a href="download.html">التحميل</a>
+        <a href="pricing.html">الأسعار</a>
+        <a href="how-it-works.html">طريقة العمل</a>
+        <a href="help/index.html">المساعدة</a>
+        <a href="contact.html">اتصل بنا</a>
+      </div>
+      <a
+        href="download.html"
+        class="btn btn-primary"
+        style="width: 100%; margin-top: auto"
+        >تحميل سند
+      </a>
+    </div>
+
+    <!-- ============================================
+         Download Hero
+         ============================================ -->
+    <section class="hero-band hero-band-blue hero-compact">
+      <div class="container download-hero">
+        <h1 class="display-lg">حمّل سند الآن</h1>
+        <p style="max-width: 500px">
+          برنامج إدارة المراكز التعليمية — متوفر لويندوز، مجاني بالكامل.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Download Card
+         ============================================ -->
+    <section class="section band-canvas" style="padding-top: 0">
+      <div class="container">
+        <div class="download-card">
+          <div class="os-selector">
+            <button class="os-btn active" data-os="windows">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="18"
+                height="18"
+                style="vertical-align: middle; margin-left: 6px"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8" />
+                <path d="M12 17v4" />
+              </svg>
+              ويندوز
+            </button>
+          </div>
+          <div class="version">الإصدار v1.0.0</div>
+          <h3 class="title-lg">سند لنظام ويندوز</h3>
+          <p style="color: var(--muted); font-size: 14px">حجم الملف: ٤٢ م.ب</p>
+          <a href="#" class="btn btn-cta" style="width: 100%">تحميل سند </a>
+          <p
+            style="
+              color: var(--muted-soft);
+              font-size: 13px;
+              margin-top: var(--space-sm);
+            "
+          >
+            آخر تحديث: ١ مايو ٢٠٢٦
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         System Requirements
+         ============================================ -->
+    <section class="section band-soft">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-xxl)">
+          <h2 class="display-md">متطلبات التشغيل</h2>
+          <p
+            style="
+              color: var(--body);
+              margin-top: var(--space-base);
+              max-width: 500px;
+              margin-inline: auto;
+            "
+          >
+            سند يعمل على معظم أجهزة ويندوز الحديثة. إليك الحد الأدنى
+            للمتطلبات:
+          </p>
+        </div>
+        <div class="requirements-grid">
+          <div class="requirement-card">
+            <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="vertical-align: middle; margin-left: 6px"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg> إصدار ويندوز</h4>
+            <p>ويندوز ١٠ أو ١١ (64-bit)</p>
+          </div>
+          <div class="requirement-card">
+            <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="vertical-align: middle; margin-left: 6px"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6v4"/><path d="M15 6v4"/><path d="M9 14v4"/><path d="M15 14v4"/></svg> الذاكرة (RAM)</h4>
+            <p>٤ جيجابايت فأكثر</p>
+          </div>
+          <div class="requirement-card">
+            <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="vertical-align: middle; margin-left: 6px"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> المساحة التخزينية</h4>
+            <p>٥٠٠ ميجابايت</p>
+          </div>
+          <div class="requirement-card">
+            <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="vertical-align: middle; margin-left: 6px"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> اتصال بالإنترنت</h4>
+            <p>غير مطلوب للتشغيل</p>
+          </div>
+          <div class="requirement-card">
+            <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="vertical-align: middle; margin-left: 6px"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> المعالج (CPU)</h4>
+            <p>1.5 GHz ثنائي النواة</p>
+          </div>
+          <div class="requirement-card">
+            <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="vertical-align: middle; margin-left: 6px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> العمل بدون إنترنت</h4>
+            <p>كامل — جميع الميزات متوفرة</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Install Guide
+         ============================================ -->
+    <section class="section band-canvas">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-xxl)">
+          <h2 class="display-md">كيفية تثبيت سند</h2>
+          <p
+            style="
+              color: var(--body);
+              margin-top: var(--space-base);
+              max-width: 500px;
+              margin-inline: auto;
+            "
+          >
+            اتبع هذه الخطوات البسيطة لبدء استخدام سند على جهازك.
+          </p>
+        </div>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-step-num">١</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">تحميل البرنامج</h3>
+              <p>
+                حمّل ملف التثبيت من أعلى هذه الصفحة.
+              </p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٢</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">تثبيت البرنامج</h3>
+              <p>
+                شغّل ملف التثبيت (.exe) واتبع التعليمات التي تظهر على الشاشة.
+              </p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٣</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">فتح سند</h3>
+              <p>
+                بعد التثبيت، افتح سند من قائمة ابدأ أو مجلد التطبيقات. ستظهر
+                شاشة الترحيب.
+              </p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٤</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">تفعيل الترخيص</h3>
+              <p>
+                أدخل رمز التفعيل المرسل إلى بريدك الإلكتروني (يمكنك البدء
+                بالباقة المجانية فوراً).
+              </p>
+            </div>
+          </div>
+          <div class="workflow-arrow">↓</div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">٥</div>
+            <div class="workflow-step-content">
+              <h3 class="title-md">إنشاء حساب المشرف</h3>
+              <p>
+                أنشئ حساب المشرف — البريد الإلكتروني وكلمة المرور — وابدأ العمل
+                فوراً!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Release Notes Preview
+         ============================================ -->
+    <section class="section band-soft">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-xxl)">
+          <h2 class="display-md">آخر التحديثات</h2>
+        </div>
+        <div class="changelog-list">
+          <div class="changelog-entry">
+            <h3>
+              الإصدار v1.0.0
+              <span class="changelog-date">— ١ مايو ٢٠٢٦</span>
+            </h3>
+            <ul>
+              <li>إدارة الطلاب والمعلمين والمجموعات</li>
+              <li>تسجيل الحضور والغياب</li>
+              <li>إدارة المدفوعات والفواتير</li>
+              <li>تقارير شاملة وإحصائيات</li>
+              <li>واجهة عربية كاملة وسهلة الاستخدام</li>
+              <li>عمل كامل بدون اتصال بالإنترنت</li>
+            </ul>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-lg)">
+          <a href="changelog.html" class="btn btn-text"
+            >عرض سجل التحديثات الكامل ←</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA Footer
+         ============================================ -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="display-md">ابدأ الآن مع سند</h2>
+        <p>حمّل سند مجاناً وابدأ في إدارة مركزك التعليمي بكل سهولة</p>
+        <div class="hero-ctas">
+          <a href="download.html" class="btn btn-cta">حمّل سند مجاناً</a>
+          <a href="contact.html" class="btn btn-outline">اطلب عرضاً توضيحياً</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Footer
+         ============================================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>المنتج</h4>
+            <a href="download.html">التحميل</a>
+            <a href="pricing.html">الأسعار</a>
+            <a href="how-it-works.html">طريقة العمل</a>
+            <a href="changelog.html">سجل التحديثات</a>
+          </div>
+          <div class="footer-col">
+            <h4>الدعم</h4>
+            <a href="help/index.html">المساعدة</a>
+            <a href="academy/index.html">الأكاديمية</a>
+            <a href="contact.html">اتصل بنا</a>
+            <a href="status.html">حالة الخدمة</a>
+          </div>
+          <div class="footer-col">
+            <h4>المميزات</h4>
+            <a href="how-it-works.html#students">إدارة الطلاب</a>
+            <a href="how-it-works.html#teachers">إدارة المعلمين</a>
+            <a href="how-it-works.html#attendance">تسجيل الحضور</a>
+            <a href="how-it-works.html#payments">المدفوعات</a>
+          </div>
+          <div class="footer-col">
+            <h4>القانون</h4>
+            <a href="privacy.html">سياسة الخصوصية</a>
+            <a href="terms.html">شروط الاستخدام</a>
+            <a href="refund-policy.html">سياسة الاسترجاع</a>
+          </div>
+          <div class="footer-col">
+            <h4>الشركة</h4>
+            <a href="about.html">عن سند </a>
+            <a href="contact.html">اتصل بنا</a>
+          </div>
+          <div class="footer-col">
+            <img src="assets/logo/logo.png" alt="سند" class="footer-logo" />
+            <p style="font-size: 14px; color: var(--muted)">
+              برنامج إدارة المراكز التعليمية. حل متكامل ومبسط لإدارة مركزك بكل
+              احترافية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="legal-band">
+      <span>© 2026 سند . جميع الحقوق محفوظة.</span>
+      <div>
+        <a href="privacy.html">سياسة الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+        <a href="refund-policy.html">سياسة الاسترجاع</a>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
