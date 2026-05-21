@@ -134,7 +134,7 @@
               </svg>
             </div>
             <h3 class="title-md">البريد الإلكتروني</h3>
-            <p class="body-md">support@sanad.app</p>
+            <p class="body-md"><a href="mailto:21.mohabelkholy@gmail.com">21.mohabelkholy@gmail.com</a></p>
           </div>
           <div class="card">
             <div class="card-icon">
@@ -152,7 +152,7 @@
             </div>
             <h3 class="title-md">واتساب</h3>
             <p class="body-md" dir="ltr" style="text-align: right">
-              +966 XX XXX XXXX
+              <a href="https://wa.me/201551152503" target="_blank" rel="noopener">+20 155 115 2503</a>
             </p>
           </div>
           <div class="card">
@@ -170,7 +170,7 @@
               </svg>
             </div>
             <h3 class="title-md">ساعات الدعم</h3>
-            <p class="body-md">الأحد - الخميس ٩ص - ٦م</p>
+            <p class="body-md">كل يوم ١٠ صباحًا - ١٢ مساءً</p>
           </div>
           <div class="card">
             <div class="card-icon">
@@ -187,7 +187,7 @@
               </svg>
             </div>
             <h3 class="title-md">طلب مبيعات</h3>
-            <p class="body-md">sales@sanad.app</p>
+            <p class="body-md"><a href="https://wa.me/201551152503" target="_blank" rel="noopener">تواصل عبر واتساب</a></p>
           </div>
         </div>
       </div>
@@ -305,6 +305,25 @@
       </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.querySelector(".contact-form");
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var subject = document.getElementById("subject");
+            var message = document.getElementById("message");
+            var text =
+              "الاسم: " + (name ? name.value : "") + "%0a" +
+              "البريد: " + (email ? email.value : "") + "%0a" +
+              "الموضوع: " + (subject ? subject.value : "") + "%0a" +
+              "الرسالة: " + (message ? message.value : "");
+            window.open("https://wa.me/201551152503?text=" + text, "_blank");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
