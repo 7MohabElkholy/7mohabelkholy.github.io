@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="حلول للمشاكل الشائعة والأخطاء في سند — دليل استكشاف الأخطاء وإصلاحها." />
+    <title>استكشاف الأخطاء — المساعدة | سند</title>
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Sanad" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .help-article { max-width: 800px; margin-inline: auto; }
+      .help-article h2 { font-size: 24px; margin-top: var(--space-xxl); margin-bottom: var(--space-base); padding-bottom: var(--space-xs); border-bottom: 1px solid var(--hairline-soft); }
+      .help-article h3 { font-size: 18px; margin-top: var(--space-xl); margin-bottom: var(--space-sm); color: var(--ink); }
+      .help-article p, .help-article li { font-size: 16px; line-height: 1.8; color: var(--body); margin-bottom: var(--space-base); }
+      .help-article ul, .help-article ol { padding-inline-start: var(--space-lg); margin-bottom: var(--space-base); }
+      .help-article li { list-style: disc; }
+      .help-article .note { background: var(--blue-splash); padding: var(--space-base) var(--space-lg); border-radius: var(--rounded-lg); margin-bottom: var(--space-lg); font-size: 14px; color: var(--body); }
+      .help-article .note strong { color: var(--ink); }
+      .help-article .warn { background: #fff8e6; padding: var(--space-base) var(--space-lg); border-radius: var(--rounded-lg); margin-bottom: var(--space-lg); font-size: 14px; color: var(--body); border-right: 4px solid var(--accent-yellow); }
+      .help-article .warn strong { color: var(--ink); }
+      .help-article .danger { background: #fff0f0; padding: var(--space-base) var(--space-lg); border-radius: var(--rounded-lg); margin-bottom: var(--space-lg); font-size: 14px; color: var(--body); border-right: 4px solid var(--semantic-down); }
+      .help-article .danger strong { color: var(--ink); }
+      .help-back { display: inline-flex; align-items: center; gap: var(--space-xs); color: var(--primary); font-weight: 600; font-size: 14px; margin-bottom: var(--space-lg); }
+      .help-back:hover { color: var(--primary-active); }
+    </style>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="container">
+        <a href="/sanad/index.html" class="top-nav-logo"><img src="../assets/logo/logo.png" alt="سند" /></a>
+        <div class="top-nav-menu">
+          <a href="../index.html">الرئيسية</a>
+          <a href="../download.html">التحميل</a>
+          <a href="../pricing.html">الأسعار</a>
+          <a href="../how-it-works.html">طريقة العمل</a>
+          <a href="index.html" class="active">المساعدة</a>
+        </div>
+        <div class="top-nav-actions">
+          <a href="../download.html" class="btn btn-primary">تحميل سند </a>
+          <button class="nav-toggle" aria-label="فتح القائمة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18" /></svg></button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay"></div>
+    <div class="nav-sheet">
+      <button class="nav-sheet-close" aria-label="إغلاق القائمة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M18 6L6 18M6 6l12 12" /></svg></button>
+      <div class="nav-sheet-menu">
+        <a href="../index.html">الرئيسية</a>
+        <a href="../download.html">التحميل</a>
+        <a href="../pricing.html">الأسعار</a>
+        <a href="../how-it-works.html">طريقة العمل</a>
+        <a href="index.html">المساعدة</a>
+        <a href="../contact.html">اتصل بنا</a>
+      </div>
+      <a href="../download.html" class="btn btn-primary" style="width: 100%; margin-top: auto">تحميل سند </a>
+    </div>
+
+    <section class="hero-band hero-band-blue hero-compact">
+      <div class="container">
+        <a href="index.html" class="help-back">← العودة إلى مركز المساعدة</a>
+        <h1 class="display-md">استكشاف الأخطاء</h1>
+        <p>حلول للمشاكل الشائعة والأخطاء</p>
+      </div>
+    </section>
+
+    <section class="section band-canvas">
+      <div class="container">
+        <div class="help-article">
+
+          <h2>البرنامج لا يعمل بعد التثبيت. ماذا أفعل؟</h2>
+          <p><strong>الخطوة 1 — أعد تشغيل البرنامج:</strong></p>
+          <ul>
+            <li>تأكد من إغلاق البرنامج بالكامل (من شريط المهام ← انقر يمين على أيقونة سند ← إغلاق)</li>
+            <li>أعد تشغيله مرة أخرى</li>
+          </ul>
+          <p><strong>الخطوة 2 — أعد تشغيل الجهاز:</strong></p>
+          <ul>
+            <li>أعد تشغيل الكمبيوتر بالكامل وحاول مرة أخرى</li>
+          </ul>
+          <p><strong>الخطوة 3 — تحقق من برنامج الحماية:</strong></p>
+          <ul>
+            <li>بعض برامج مكافحة الفيروسات قد تمنع تشغيل البرنامج</li>
+            <li>تأكد من أن البرنامج مضاف إلى قائمة الاستثناءات في برنامج الحماية</li>
+          </ul>
+          <p><strong>الخطوة 4 — أعد التثبيت:</strong></p>
+          <ul>
+            <li>قم بإلغاء تثبيت البرنامج من "إضافة أو إزالة البرامج"</li>
+            <li>حمّل المثبّت مرة أخرى من رابط التحميل</li>
+            <li>أعد التثبيت</li>
+          </ul>
+          <p><strong>الخطوة 5 — تحقق من السجلات (للمساعدة الفنية):</strong></p>
+          <ul>
+            <li>إذا كنت تتواصل مع الدعم، يمكن العثور على سجلات الأخطاء في مجلد <code>logs/</code> داخل مجلد بيانات التطبيق</li>
+          </ul>
+          <p>إذا استمرت المشكلة، تواصل مع الدعم الفني عبر واتساب <strong>+20 155 115 2503</strong>.</p>
+
+          <h2>لا أستطيع تسجيل الدخول. ما الحل؟</h2>
+          <p><strong>المشكلة 1 — نسيت كلمة المرور:</strong></p>
+          <ul>
+            <li>حاليًا، لا توجد خاصية "نسيت كلمة المرور" (إدارة المستخدمين محلية وليست سحابية)</li>
+            <li>تواصل مع المسؤول (Super Admin) لإعادة تعيين كلمة المرور الخاصة بك</li>
+            <li>أو اطلب من المسؤول إنشاء حساب جديد لك</li>
+          </ul>
+          <p><strong>المشكلة 2 — أول مرة تشغيل ولا يوجد حساب:</strong></p>
+          <ul>
+            <li>عند أول تشغيل للبرنامج، يتم إنشاء حساب مسؤول (Super Admin) تلقائيًا</li>
+            <li>اذهب إلى شاشة <strong>"تسجيل"</strong> (Register) وأنشئ أول حساب — سيصبح هذا الحساب هو المسؤول</li>
+          </ul>
+          <p><strong>المشكلة 3 — رسالة خطأ "بيانات الدخول غير صحيحة":</strong></p>
+          <ul>
+            <li>تأكد من صحة اسم المستخدم وكلمة المرور</li>
+            <li>كلمة المرور حساسة لحالة الأحرف (Case-Sensitive)</li>
+          </ul>
+          <p><strong>المشكلة 4 — مشكلة في الترخيص:</strong></p>
+          <ul>
+            <li>إذا لم تظهر شاشة تسجيل الدخول، قد تكون عالقًا في شاشة التفعيل</li>
+            <li>تأكد من أن الترخيص مفعّل بشكل صحيح (راجع قسم التفعيل)</li>
+          </ul>
+
+          <h2>تظهر لي رسالة خطأ في قاعدة البيانات. كيف أصلحها؟</h2>
+          <p><strong>الخطوة 1 — أعد تشغيل البرنامج:</strong></p>
+          <ul>
+            <li>أغلق البرنامج بالكامل وأعد فتحه — قد يحل المشكلة مؤقتًا</li>
+          </ul>
+          <p><strong>الخطوة 2 — تحقق من مساحة القرص:</strong></p>
+          <ul>
+            <li>تأكد من وجود مساحة كافية على القرص الصلب (200 MB على الأقل)</li>
+          </ul>
+          <p><strong>الخطوة 3 — أعد تشغيل الجهاز:</strong></p>
+          <ul>
+            <li>أعد تشغيل الكمبيوتر — قد يكون هناك تعارض في قفل ملف قاعدة البيانات</li>
+          </ul>
+          <p><strong>الخطوة 4 — مسح قاعدة البيانات (كحل أخير):</strong></p>
+          <ul>
+            <li>إذا كانت الرسالة تتعلق بتلف قاعدة البيانات:
+              <ul>
+                <li>اذهب إلى <strong>"الإعدادات" &gt; "مسح قاعدة البيانات"</strong></li>
+                <li><strong>تحذير:</strong> هذا سيزيل جميع بياناتك (الطلاب، المدرسين، الحضور، المدفوعات، إلخ)</li>
+                <li>بعد المسح، ستحتاج إلى إعادة إدخال بياناتك</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="warn"><strong>ملاحظة مهمة:</strong> قاعدة بيانات SQLite تعمل في وضع WAL (Write-Ahead Logging) لتحسين الأداء. إذا كنت تنقل ملفات التطبيق يدويًا، تأكد من نسخ كل من <code>database.sqlite</code> و <code>database.sqlite-wal</code> معًا.</div>
+          <p>إذا استمرت المشكلة، تواصل مع الدعم الفني.</p>
+
+          <h2>البرنامج يعمل ببطء ملحوظ؛ ما السبب؟</h2>
+          <p><strong>الأسباب المحتملة والحلول:</strong></p>
+          <ol>
+            <li><strong>عدد كبير من البيانات:</strong> إذا كان لديك آلاف الطلاب أو سجلات حضور كثيرة، قد يبطئ البرنامج أثناء تحميل القوائم. استخدم <strong>البحث</strong> والتصفية لتضييق النتائج بدلاً من تصفّح القوائم الكاملة.</li>
+            <li><strong>اتصال الإنترنت البطيء:</strong> التحقق الخلفي من الترخيص (كل 5 دقائق) يتطلب اتصال بالإنترنت. إذا كان اتصالك بطيئًا، قد يؤثر ذلك على استجابة البرنامج.</li>
+            <li><strong>واتساب ويب:</strong> تطبيق واتساب ويب المدمج يستهلك ذاكرة وموارد. إذا كنت لا تستخدم واتساب، يمكنك تسجيل الخروج من واتساب ويب داخل البرنامج.</li>
+            <li><strong>الكاميرا (QR):</strong> إذا كانت الكاميرا قيد التشغيل (في شاشة الحضور)، تأكد من إغلاقها بعد الانتهاء من المسح.</li>
+            <li><strong>الجهاز نفسه:</strong> تأكد من أن جهازك يلبي متطلبات النظام (2 GB RAM كحد أدنى، 4 GB موصى به). أغلق التطبيقات الأخرى غير الضرورية.</li>
+            <li><strong>إعادة التشغيل الدوري:</strong> كإجراء وقائي، أعد تشغيل البرنامج مرة واحدة أسبوعيًا لتحرير الذاكرة.</li>
+          </ol>
+
+          <h2>نسيت رمز الدخول؛ كيف أسترجع الوصول؟</h2>
+          <p><strong>السيناريو 1 — أنت المسؤول الوحيد ونسيت كلمة المرور:</strong></p>
+          <ul>
+            <li>لا يوجد خيار "نسيت كلمة المرور" في الإصدار الحالي</li>
+            <li>الحل الوحيد هو <strong>مسح قاعدة البيانات</strong> من مسار التطبيق يدويًا:
+              <ol>
+                <li>اذهب إلى مجلد بيانات التطبيق (عادةً: <code>C:\Users\[اسمك]\AppData\Roaming\Sanad\</code>)</li>
+                <li>احذف ملف <code>database.sqlite</code> (بعد أخذ نسخة احتياطية إذا أمكن)</li>
+                <li>أعد تشغيل البرنامج — سيتم إنشاء قاعدة بيانات جديدة وستظهر شاشة "تسجيل" لإنشاء حساب مسؤول جديد</li>
+              </ol>
+            </li>
+          </ul>
+          <div class="danger"><strong>تنبيه:</strong> هذا سيؤدي إلى فقدان جميع البيانات. لا تقم بهذا إلا كحل أخير.</div>
+          <p><strong>السيناريو 2 — هناك مسؤول آخر (Super Admin):</strong></p>
+          <ul>
+            <li>اطلب من المسؤول تسجيل الدخول → الذهاب إلى <strong>"الإدارة" &gt; "المستخدمين"</strong></li>
+            <li>يمكنه اختيار حسابك وإعادة تعيين كلمة المرور أو إنشاء حساب جديد لك</li>
+          </ul>
+          <p><strong>السيناريو 3 — لديك صلاحيات محدودة ولست مسؤولًا:</strong></p>
+          <ul>
+            <li>تواصل مع المسؤول المباشر أو مدير النظام لإعادة تعيين كلمة المرور الخاصة بك</li>
+          </ul>
+          <div class="note"><strong>للحماية المستقبلية:</strong> نوصي المسؤولين بتدوين كلمة المرور في مكان آمن أو استخدام مدير كلمات مرور.</div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-soft">
+      <div class="container" style="text-align: center">
+        <h2 class="display-md">لم تجد إجابتك؟</h2>
+        <p style="color: var(--body); margin-top: var(--space-base); max-width: 500px; margin-inline: auto;">فريق الدعم الفني جاهز لمساعدتك. تواصل معنا وسنرد عليك في أقرب وقت.</p>
+        <div style="margin-top: var(--space-lg)"><a href="../contact.html" class="btn btn-primary">اتصل بفريق الدعم</a></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col"><h4>المنتج</h4><a href="../download.html">التحميل</a><a href="../pricing.html">الأسعار</a><a href="../how-it-works.html">طريقة العمل</a><a href="../changelog.html">سجل التحديثات</a></div>
+          <div class="footer-col"><h4>الدعم</h4><a href="index.html">المساعدة</a><a href="../academy/index.html">الأكاديمية</a><a href="../contact.html">اتصل بنا</a><a href="../status.html">حالة الخدمة</a></div>
+          <div class="footer-col"><h4>المميزات</h4><a href="../how-it-works.html#students">إدارة الطلاب</a><a href="../how-it-works.html#teachers">إدارة المعلمين</a><a href="../how-it-works.html#attendance">تسجيل الحضور</a><a href="../how-it-works.html#payments">المدفوعات</a></div>
+          <div class="footer-col"><h4>القانون</h4><a href="../privacy.html">سياسة الخصوصية</a><a href="../terms.html">شروط الاستخدام</a><a href="../refund-policy.html">سياسة الاسترجاع</a></div>
+          <div class="footer-col"><h4>الشركة</h4><a href="../about.html">عن سند </a><a href="../contact.html">اتصل بنا</a></div>
+          <div class="footer-col"><img src="../assets/logo/logo.png" alt="سند" class="footer-logo" /><p style="font-size: 14px; color: var(--muted)">برنامج إدارة المراكز التعليمية. حل متكامل ومبسط لإدارة مركزك بكل احترافية.</p></div>
+        </div>
+      </div>
+    </footer>
+    <div class="legal-band">
+      <span>© 2026 سند . جميع الحقوق محفوظة.</span>
+      <div><a href="../privacy.html">سياسة الخصوصية</a><a href="../terms.html">الشروط</a><a href="../refund-policy.html">سياسة الاسترجاع</a></div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

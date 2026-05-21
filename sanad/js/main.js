@@ -66,6 +66,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // --- Help Center Search ---
+  var searchInput = document.querySelector('.hero-search input[type="search"]');
+  var helpCards = document.querySelectorAll(".help-categories > a");
+  if (searchInput && helpCards.length) {
+    searchInput.addEventListener("input", function () {
+      var q = this.value.trim().toLowerCase();
+      helpCards.forEach(function (a) {
+        var text = a.textContent.toLowerCase();
+        a.style.display = !q || text.includes(q) ? "" : "none";
+      });
+    });
+  }
+
   // --- Active nav link ---
   var currentPath = window.location.pathname.replace(/\/$/, "") || "/index";
   document.querySelectorAll(".top-nav-menu a").forEach(function (a) {

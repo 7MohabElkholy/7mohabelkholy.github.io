@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="إنشاء المجموعات الدراسية وتقسيم الطلاب في سند — دليل إنشاء المجموعات وإضافة الطلاب ونقلهم بين المجموعات." />
+    <title>المجموعات — المساعدة | سند</title>
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Sanad" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .help-article { max-width: 800px; margin-inline: auto; }
+      .help-article h2 { font-size: 24px; margin-top: var(--space-xxl); margin-bottom: var(--space-base); padding-bottom: var(--space-xs); border-bottom: 1px solid var(--hairline-soft); }
+      .help-article h3 { font-size: 18px; margin-top: var(--space-xl); margin-bottom: var(--space-sm); color: var(--ink); }
+      .help-article p, .help-article li { font-size: 16px; line-height: 1.8; color: var(--body); margin-bottom: var(--space-base); }
+      .help-article ul, .help-article ol { padding-inline-start: var(--space-lg); margin-bottom: var(--space-base); }
+      .help-article li { list-style: disc; }
+      .help-article .note { background: var(--blue-splash); padding: var(--space-base) var(--space-lg); border-radius: var(--rounded-lg); margin-bottom: var(--space-lg); font-size: 14px; color: var(--body); }
+      .help-article .note strong { color: var(--ink); }
+      .help-article .danger { background: #fff0f0; padding: var(--space-base) var(--space-lg); border-radius: var(--rounded-lg); margin-bottom: var(--space-lg); font-size: 14px; color: var(--body); border-right: 4px solid var(--semantic-down); }
+      .help-article .danger strong { color: var(--ink); }
+      .help-back { display: inline-flex; align-items: center; gap: var(--space-xs); color: var(--primary); font-weight: 600; font-size: 14px; margin-bottom: var(--space-lg); }
+      .help-back:hover { color: var(--primary-active); }
+    </style>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="container">
+        <a href="/sanad/index.html" class="top-nav-logo"><img src="../assets/logo/logo.png" alt="سند" /></a>
+        <div class="top-nav-menu">
+          <a href="../index.html">الرئيسية</a>
+          <a href="../download.html">التحميل</a>
+          <a href="../pricing.html">الأسعار</a>
+          <a href="../how-it-works.html">طريقة العمل</a>
+          <a href="index.html" class="active">المساعدة</a>
+        </div>
+        <div class="top-nav-actions">
+          <a href="../download.html" class="btn btn-primary">تحميل سند </a>
+          <button class="nav-toggle" aria-label="فتح القائمة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18" /></svg></button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay"></div>
+    <div class="nav-sheet">
+      <button class="nav-sheet-close" aria-label="إغلاق القائمة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M18 6L6 18M6 6l12 12" /></svg></button>
+      <div class="nav-sheet-menu">
+        <a href="../index.html">الرئيسية</a>
+        <a href="../download.html">التحميل</a>
+        <a href="../pricing.html">الأسعار</a>
+        <a href="../how-it-works.html">طريقة العمل</a>
+        <a href="index.html">المساعدة</a>
+        <a href="../contact.html">اتصل بنا</a>
+      </div>
+      <a href="../download.html" class="btn btn-primary" style="width: 100%; margin-top: auto">تحميل سند </a>
+    </div>
+
+    <section class="hero-band hero-band-blue hero-compact">
+      <div class="container">
+        <a href="index.html" class="help-back">← العودة إلى مركز المساعدة</a>
+        <h1 class="display-md">المجموعات الدراسية</h1>
+        <p>إنشاء المجموعات وتقسيم الطلاب</p>
+      </div>
+    </section>
+
+    <section class="section band-canvas">
+      <div class="container">
+        <div class="help-article">
+
+          <h2>كيف أُنشئ مجموعة دراسية جديدة؟</h2>
+          <ol>
+            <li>اذهب إلى <strong>"الدراسة" &gt; "المجموعات الدراسية"</strong></li>
+            <li>اضغط على <strong>"إضافة مجموعة"</strong></li>
+            <li>أدخل البيانات التالية:
+              <ul>
+                <li><strong>الاسم</strong> (إجباري — مثل: "مجموعة أولى إعدادي أ")</li>
+                <li><strong>المرحلة الدراسية</strong> (اختياري — اختر من القائمة)</li>
+                <li><strong>المادة</strong> (اختياري)</li>
+                <li><strong>المدرس</strong> (اختياري)</li>
+                <li><strong>السعر الشهري</strong> (اختياري — سيُستخدم في شاشة المصروفات الشهرية)</li>
+                <li><strong>المواعيد</strong> — أضف موعدًا دراسيًا واحدًا على الأقل (اليوم، وقت البداية، وقت النهاية)</li>
+              </ul>
+            </li>
+            <li>اضغط على <strong>"حفظ"</strong></li>
+          </ol>
+
+          <h2>كيف أضيف طلابًا إلى مجموعة دراسية؟</h2>
+          <ol>
+            <li>اذهب إلى <strong>"الدراسة" &gt; "المجموعات الدراسية"</strong></li>
+            <li>اختر المجموعة الدراسية المطلوبة</li>
+            <li>اذهب إلى تبويب <strong>"الطلاب"</strong> داخل صفحة المجموعة</li>
+            <li>اضغط على <strong>"تعديل الطلاب"</strong> أو <strong>"إضافة طلاب"</strong></li>
+            <li>اختر الطلاب من القائمة — يمكنك تحديد عدة طلاب دفعة واحدة</li>
+            <li>اضغط على <strong>"حفظ"</strong></li>
+          </ol>
+          <div class="note"><strong>إضافة دفعة واحدة:</strong> يمكنك إضافة جميع طلاب مرحلة دراسية معينة إلى مجموعة عن طريق تصفية الطلاب حسب المرحلة أولاً.</div>
+
+          <h2>كيف أنقل طالبًا بين مجموعتين دراسيتين؟</h2>
+          <ol>
+            <li>اذهب إلى <strong>"الدراسة" &gt; "المجموعات الدراسية"</strong></li>
+            <li>افتح المجموعة الحالية للطالب</li>
+            <li>اذهب إلى تبويب <strong>"الطلاب"</strong> داخل المجموعة</li>
+            <li>اضغط على زر <strong>"تعديل الطلاب"</strong></li>
+            <li><strong>أزل</strong> الطالب من المجموعة الحالية (قم بإلغاء تحديده)</li>
+            <li>انتقل إلى المجموعة الجديدة (أو افتحها في علامة تبويب أخرى)</li>
+            <li>في المجموعة الجديدة، اضغط على <strong>"إضافة طلاب"</strong> واختر الطالب</li>
+            <li>اضغط على <strong>"حفظ"</strong></li>
+          </ol>
+          <div class="note">عند فتح نافذة تعديل الطلاب، يمكنك إضافة وإزالة طلاب متعددين في نفس الوقت وحفظ التغييرات دفعة واحدة.</div>
+
+          <h2>كيف أحذف مجموعة دراسية؟</h2>
+          <ol>
+            <li>اذهب إلى <strong>"الدراسة" &gt; "المجموعات الدراسية"</strong></li>
+            <li>ابحث عن المجموعة المطلوبة</li>
+            <li>اضغط على أيقونة <strong>🗑️ (حذف)</strong></li>
+            <li>قم بالتأكيد عند ظهور رسالة التأكيد</li>
+          </ol>
+          <div class="danger"><strong>تنبيه:</strong> حذف المجموعة يؤدي إلى إزالة جميع بياناتها — بما في ذلك: تسجيلات الحضور الخاصة بهذه المجموعة، سجلات المصروفات الشهرية، درجات الامتحانات والواجبات المرتبطة بها. لا يمكن التراجع عن هذا الإجراء.</div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-soft">
+      <div class="container" style="text-align: center">
+        <h2 class="display-md">لم تجد إجابتك؟</h2>
+        <p style="color: var(--body); margin-top: var(--space-base); max-width: 500px; margin-inline: auto;">فريق الدعم الفني جاهز لمساعدتك. تواصل معنا وسنرد عليك في أقرب وقت.</p>
+        <div style="margin-top: var(--space-lg)"><a href="../contact.html" class="btn btn-primary">اتصل بفريق الدعم</a></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col"><h4>المنتج</h4><a href="../download.html">التحميل</a><a href="../pricing.html">الأسعار</a><a href="../how-it-works.html">طريقة العمل</a><a href="../changelog.html">سجل التحديثات</a></div>
+          <div class="footer-col"><h4>الدعم</h4><a href="index.html">المساعدة</a><a href="../academy/index.html">الأكاديمية</a><a href="../contact.html">اتصل بنا</a><a href="../status.html">حالة الخدمة</a></div>
+          <div class="footer-col"><h4>المميزات</h4><a href="../how-it-works.html#students">إدارة الطلاب</a><a href="../how-it-works.html#teachers">إدارة المعلمين</a><a href="../how-it-works.html#attendance">تسجيل الحضور</a><a href="../how-it-works.html#payments">المدفوعات</a></div>
+          <div class="footer-col"><h4>القانون</h4><a href="../privacy.html">سياسة الخصوصية</a><a href="../terms.html">شروط الاستخدام</a><a href="../refund-policy.html">سياسة الاسترجاع</a></div>
+          <div class="footer-col"><h4>الشركة</h4><a href="../about.html">عن سند </a><a href="../contact.html">اتصل بنا</a></div>
+          <div class="footer-col"><img src="../assets/logo/logo.png" alt="سند" class="footer-logo" /><p style="font-size: 14px; color: var(--muted)">برنامج إدارة المراكز التعليمية. حل متكامل ومبسط لإدارة مركزك بكل احترافية.</p></div>
+        </div>
+      </div>
+    </footer>
+    <div class="legal-band">
+      <span>© 2026 سند . جميع الحقوق محفوظة.</span>
+      <div><a href="../privacy.html">سياسة الخصوصية</a><a href="../terms.html">الشروط</a><a href="../refund-policy.html">سياسة الاسترجاع</a></div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
